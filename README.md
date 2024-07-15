@@ -1,13 +1,10 @@
 ---
 license: mit
-widget:
-- src: https://documentation.tricentis.com/tosca/1420/en/content/tbox/images/table.png
-  example_title: Table
 ---
 
-# Table Transformer (fine-tuned for Table Structure Recognition) 
+# Table Transformer (pre-trained for Table Structure Recognition) 
 
-Table Transformer (DETR) model trained on PubTables1M. It was introduced in the paper [PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents](https://arxiv.org/abs/2110.00061) by Smock et al. and first released in [this repository](https://github.com/microsoft/table-transformer). 
+Table Transformer (TATR) model trained on PubTables1M and FinTabNet.c. It was introduced in the paper [Aligning benchmark datasets for table structure recognition](https://arxiv.org/abs/2303.00716) by Smock et al. and first released in [this repository](https://github.com/microsoft/table-transformer). 
 
 Disclaimer: The team releasing Table Transformer did not write a model card for this model so this model card has been written by the Hugging Face team.
 
@@ -17,4 +14,4 @@ The Table Transformer is equivalent to [DETR](https://huggingface.co/docs/transf
 
 ## Usage
 
-You can use the raw model for detecting the structure (like rows, columns) in tables. See the [documentation](https://huggingface.co/docs/transformers/main/en/model_doc/table-transformer) for more info.
+You can use the raw model for detecting tables in documents. See the [documentation](https://huggingface.co/docs/transformers/main/en/model_doc/table-transformer) for more info.
